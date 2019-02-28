@@ -9,34 +9,56 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"></head>
 
 <body>
 
-    <!--Jumbotron-->
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to F.R.I.E.N.D.S Trivia!</h1>
-        <div class="logo">
-            <img src="assets/images/Friendsphoto1.jpg" class="img-fluid text-center" id="main-logo" alt="Friends Logo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="display-3">Trivia Game</h1>
+                <img src="assets/images/Friendsphoto1.jpg" class="img-fluid text-center" id="cast-photo"
+                    alt="Friends cast photo">
+            </div>
         </div>
-        <hr class="my-4">
-        <p>In this game you will test your knowledge of FRIENDS with multiple choice trivia Questions. You will have 60
-            seconds to answer all of the questions before the game automatically ends. Have Fun!</p>
-        <a class="btn btn-primary btn-lg" href="#" role="start-button">Start Game</a>
-    </div>
 
-    <div>
-        <div id="questions-box">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <h3 id="timer"></h3>
+                </div>
+            </div>
+        <!-- </div>
+        <div class="row"> -->
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div id="start-page" class="start-page-text">
+                    <h2>Are you ready to Play?</h2>
+                    <p>Test how well you really know the popular television show <b>FRIENDS</b>. You will have 40
+                        seconds to complete all the questions. The game will end automatically when the time runs
+                        out.
+                        Good Luck!</b></p>
+                    <div class="btn btn-primary" id="start-button">Start Quiz
+                    </div>
+                </div>
+
+
+                <div>
+                    <div id="questions-box">
+                    </div>
+                </div>
+
+                <div class="hidden" id="end-page">
+                    <h2> Here is your Final Score:</h2>
+                    <p id="correct-answers"></p>
+                    <p id="incorrect-answers"></p>
+                    <p id="unanswered"></p>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+
         </div>
     </div>
-
-    <div class = "gameover" id="the-end">
-        <h2> Here is your Final Score:</h2>
-        <p id="correct-answers"></p>
-        <p id="wrong-answers"></p>
-        <p id="left-blank"></p>
-    </div>
-
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

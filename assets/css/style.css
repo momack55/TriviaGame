@@ -1,10 +1,54 @@
 body {
-    background-color: black;
+    background-image: url(../images/friendsdoor.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100%;
+    background-color: purple;
     text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: 'Rock Salt', cursive;
+    }
 
-}
+  #cast-photo{
+    height: 70%;
+    width: auto;
+    }
 
-#main-logo {
-    width: 50%;
-    height: auto;
-}
+  #start-page {
+    align-content: center;
+    margin-bottom: 500px;
+    }
+  
+  #end-page {
+    display: none;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  #end-page p {
+    font-size: 20px;
+    
+  }
+  
+  #correct-answers {
+    margin-top: 32px;
+  }
+  
+  #question {
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+    
+  #done-button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
