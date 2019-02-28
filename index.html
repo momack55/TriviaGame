@@ -16,16 +16,26 @@
     <!--Jumbotron-->
     <div class="jumbotron">
         <h1 class="display-4">Welcome to F.R.I.E.N.D.S Trivia!</h1>
-        <p class="lead">Are you ready to play?.</p>
+        <div class="logo">
+            <img src="assets/images/Friendsphoto1.jpg" class="img-fluid text-center" id="main-logo" alt="Friends Logo">
+        </div>
         <hr class="my-4">
         <p>In this game you will test your knowledge of FRIENDS with multiple choice trivia Questions. You will have 60
             seconds to answer all of the questions before the game automatically ends. Have Fun!</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Start Game</a>
+        <a class="btn btn-primary btn-lg" href="#" role="start-button">Start Game</a>
     </div>
 
+    <div>
+        <div id="questions-box">
+        </div>
+    </div>
 
-
-
+    <div class = "gameover" id="the-end">
+        <h2> Here is your Final Score:</h2>
+        <p id="correct-answers"></p>
+        <p id="wrong-answers"></p>
+        <p id="left-blank"></p>
+    </div>
 
 
 
